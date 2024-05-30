@@ -37,19 +37,4 @@ const fetchProperty = async (id) => {
   }
 };
 
-const fetchAllDataProperties = async (id) => {
-  try {
-    //when the domain (the env file) is not available yet
-
-    if (!apiDomain) {
-      return null;
-    }
-    if (!response.ok) throw new Error("Failed to fetch Data");
-  } catch (err) {
-    console.err(err.msg);
-    return;
-  }
-};
-
-const fetchDataAnalytics = async (id) => {};
 export { fetchProperties, fetchProperty };
